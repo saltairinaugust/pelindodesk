@@ -1,0 +1,135 @@
+/* Background Dashboard */
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  background: url("assets/img/background.png") no-repeat center center/cover;
+  opacity: 0.5;            /* tingkat kepudaran 50% */
+  position: fixed;         /* biar tetap di belakang saat scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;             /* supaya di belakang semua elemen */
+}
+
+/* Hero Section */
+.hero {
+  background: url("assets/img/background.png") no-repeat center center/cover;
+  padding: 60px;
+  text-align: center;
+}
+.hero h1 {
+  background: #d9c19d;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* Rekap Tugas */
+.rekap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+.rekap-card {
+  background: #fbeed7;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* chart ke tengah */
+  justify-content: center;
+}
+.rekap-card img {
+  max-width: 200px;
+}
+.chart-container {
+  width: 200%;
+  height: 250px;
+  position: relative;
+  margin: 0 auto; /* posisi tengah */
+}
+
+/* Aktivitas */
+.aktivitas {
+  padding: 40px;
+  text-align: center;
+}
+.aktivitas-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* posisikan seluruh grid di tengah */
+  align-items: center; /* vertikal sejajar */
+  margin-top: 20px;
+  flex-wrap: nowrap;              /* tetap satu baris */
+}
+.aktivitas-card {
+  text-decoration: none;      /* hilangkan underline */
+  color: #000;                /* teks hitam */
+  background: #d9c19d;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+}
+.aktivitas-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.aktivitas-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;                /* pastikan tulisan tetap hitam */
+}
+
+.aktivitas-card:hover {
+  transform: scale(1.05);     /* contoh efek hover */
+  transition: 0.2s;
+}
+
+
+/* Tips Section */
+.tips {
+  padding: 40px;
+}
+.tips-card {
+  display: flex;
+  align-items: center;
+  background: #f6ebda;
+  border-radius: 25px;
+  padding: 30px;
+  gap: 30px;
+}
+.tips-card img {
+  max-width: 180px;
+}
+.tips-text h2 {
+  margin-bottom: 20px;
+}
+.tips-text h2 span {
+  color: #5a3d1c;
+  font-weight: bold;
+}
+.tips-text ul {
+  list-style: none;
+  padding: 0;
+}
+.tips-text ul li {
+  background: #a6763c;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}

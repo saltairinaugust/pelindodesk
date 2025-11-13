@@ -1,0 +1,86 @@
+/* Konten Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Intro Section */
+.intro, .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: #fdf6ee;
+}
+.intro-text, .about-text {
+    flex: 1;
+    padding: 20px;
+}
+.intro-img img, .about-img img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Wave Decoration */
+.wave {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -5px; /* rapat dengan section */
+}
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+/* Visi Misi */
+.visi-misi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+}
+
+.visi-misi .card {
+    background: #d9c19d;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    color: #000;
+}
+
+.visi-misi .icon img {
+    width: 50px;  /* ukuran icon */
+    margin-bottom: 15px;
+}
+
+/* Kenapa Harus PelindoDesk */
+.why {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.why-card {
+    display: flex;
+    align-items: center;
+    background: #f6ebda; /* warna krem */
+    border-radius: 25px;
+    padding: 40px;
+    gap: 30px;
+}
+
+.why-img img {
+    max-width: 250px;
+    border-radius: 15px;
+}
+
+.why-text {
+    flex: 1;
+}
+
